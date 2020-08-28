@@ -1,10 +1,10 @@
-const eqArray = function(arr1, arr2) {
+const eqArrays = function(firstArr, secondArr) {
   let farz = true;
-  if(arr1.length !==  arr2.length) {
+  if(firstArr.length !==  secondArr.length) {
     farz = false;
   } else {
-  for (let i = 0; i < arr1.length; i ++) {
-    if(arr1[i] !== arr2[i]) {
+  for (let i = 0; i < firstArr.length; i ++) {
+    if(firstArr[i] !== secondArr[i]) {
       farz =false;  
       }
     }
@@ -12,4 +12,5 @@ const eqArray = function(arr1, arr2) {
   return farz;
 };
 
-console.log(eqArray([2,3,6], [2,3,6]));
+
+module.exports = eqArrays;
