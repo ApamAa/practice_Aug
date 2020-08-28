@@ -7,5 +7,3 @@ const assertArraysEqual = function(firstArr, secondArr) {
   }
 };
 module.exports = assertArraysEqual
-
-assertArraysEqual([2,'2',5], [2,2,5]);
