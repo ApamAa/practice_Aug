@@ -1,4 +1,4 @@
-const asserEqual = require('./assertEqual');
+const assertEqual = require('./assertEqual');
 
 
 const findKeyByValue = function(object,value) {
@@ -23,5 +23,5 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
-asserEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-asserEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
