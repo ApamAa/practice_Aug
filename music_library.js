@@ -1,3 +1,4 @@
+
 const library = {
   tracks: { t01: { id: "t01",
                    name: "Code Monkey",
@@ -20,6 +21,7 @@ const library = {
                       name: "Other Playlist",
                       tracks: ["t03"]
                     }
+                   
              }
 };
 
@@ -31,9 +33,13 @@ const library = {
 // p01: Coding Music - 2 tracks
 // p02: Other Playlist - 1 tracks
 const printPlaylists = function() {
+  let keyOfPlaylists = Object.keys(library.playlists);
+   for(key of keyOfPlaylists) {
+     console.log(`${key} : ${library.playlists[key].name} - ${library.playlists[key].tracks.length} tracks`)
 
+   }
 }
-
+printPlaylists();
 
 // prints a list of all tracks, using the following format:
 // t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
